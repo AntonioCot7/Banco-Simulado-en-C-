@@ -69,19 +69,25 @@ Este proyecto utiliza las siguientes características avanzadas de C++:
 
 ## 🚀 Ejecución del Programa
 
-1. Compila el código utilizando un compilador de C++ compatible con C++11 o superior:
+1. Abre el proyecto en **CLion**.
 
-   ```bash
-   g++ -o BancoSimulado main.cpp Cliente.cpp CuentaAhorro.cpp Prestamo.cpp Banco.cpp -std=c++11
+2. Asegúrate de que el archivo `CMakeLists.txt` tenga la configuración correcta:
+
+   ```cmake
+   cmake_minimum_required(VERSION 3.28)
+   project(SIMULADOR_BANCO_C__)
+
+   set(CMAKE_CXX_STANDARD 17)
+
+   add_executable(SIMULADOR_BANCO_C__
+           "main.cpp"
+           "Prestamo.h"
+   )
    ```
 
-2. Ejecuta el programa desde la terminal:
+3. Presiona el botón **Run** (o usa `Shift + F10`) en CLion para compilar y ejecutar el programa.
 
-   ```bash
-   ./BancoSimulado
-   ```
-
-3. Navega por el menú para explorar las funcionalidades.
+4. Navega por el menú para explorar las funcionalidades.
 
 ## 🔄 Ejemplo de Uso
 
