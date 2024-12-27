@@ -117,9 +117,6 @@ Este proyecto demuestra el conocimiento en:
 - Uso de conceptos avanzados de C++ como herencia, polimorfismo y manejo de memoria.
 - Implementación de simulaciones reales en un entorno de consola.
 
-## 📚 Contribuciones
+## 📄 **Licencia**
 
-Si deseas contribuir o reportar problemas, no dudes en abrir un issue o pull request en este repositorio.
-
----
-¡Gracias por revisar este proyecto! Espero que sirva como demostración de mis habilidades en C++ y POO.
+Este proyecto está bajo la licencia MIT. Puedes usarlo, modificarlo y compartirlo libremente.
