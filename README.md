@@ -91,28 +91,200 @@ Este proyecto utiliza las siguientes características avanzadas de C++:
 
 ## 🔄 Ejemplo de Uso
 
-### 🔢 Menú Principal
+A continuación, se muestra un ejemplo detallado de cómo interactuar con el sistema.
 
-```
+### Menú Principal
+
+```plaintext
+---Menu---
 1. Clientes
 2. Cuentas de ahorro
-3. Préstamos de dinero
+3. Prestamos de dinero
 4. Salir
+Opcion: 1
+```
+
+### 1. Clientes
+
+#### Submenú de Clientes
+
+```plaintext
+---Clientes---
+1.1 Buscar Cliente
+1.2 Agregar Cliente
+1.3 Eliminar Cliente
+1.4 Regresar
+Opcion: 2
+```
+
+#### Agregar Cliente
+
+```plaintext
+---Agregar cliente---
+Ingresar DNI: 76355221
+Ingresar Nombre: Juancito
+Ingresar Fecha Nacimiento: 23122004
+
+Cliente Registrado
+```
+
+#### Buscar Cliente
+
+```plaintext
+---Buscar cliente---
+Ingresar DNI: 76355221
+No hay servicios registrados para este cliente.
+```
+
+### 2. Cuentas de Ahorro
+
+#### Submenú de Cuentas de Ahorro
+
+```plaintext
+---Cuentas de Ahorro---
+1. Crear Cuenta de Ahorro
+2. Realizar Depósito
+3. Realizar Retiro
+4. Consultar Saldo
+5. Cancelar cuenta 
+6. Regresar
 Opción: 1
 ```
 
-### 🔎 Buscar Cliente
+#### Crear Cuenta de Ahorro
 
+```plaintext
+---Crear Cuenta de Ahorro---
+Ingresar DNI del Cliente: 76355221
+
+Cuenta de ahorro creada exitosamente.
+Su numero de cuenta es 1740-948824
+Ahora su nueva targeta es 4916-1566-2162-0361
+Y la targeta tiene un fecha de vencimiento el /29
+
+Presiona Enter para continuar...
 ```
-1.1 Buscar cliente
-Ingresar DNI: 34981234
-====
-Servicios
-Cuenta de ahorro: 0011-938485 Monto S/: 3500.00 Activa
-Tarjeta débito asociada: 3456-1234-2345-1234 Venc: 12/27
-Prestamos:
-Fecha        Monto   Nro Cuota   Interes  Estado
-12/02/2023   5000.00 12          20%      Activo
+
+#### Realizar Depósito
+
+```plaintext
+---Realizar Depósito---
+Ingresar DNI del Cliente: 76355221
+Tarjetas encontradas:
+1. Saldo de la tarjeta 4916-1566-2162-0361 de la cuenta 1740-948824 : 0
+2. Saldo de la tarjeta 3424-0531-8096-1776 de la cuenta 3873-913863 : 0
+Seleccione la tarjeta con la que desea realizar el depósito: 1
+
+Ingrese el monto a depositar: 75000
+Se deposito correctamente S/75000
+Presiona Enter para continuar...
+```
+
+#### Consultar Saldo
+
+```plaintext
+---Consultar Saldo---
+Ingresar DNI del Cliente: 76355221
+Tarjetas encontradas:
+1. Saldo de la tarjeta 4916-1566-2162-0361 de la cuenta 1740-948824 : 75000
+2. Saldo de la tarjeta 3424-0531-8096-1776 de la cuenta 3873-913863 : 13600
+Presiona Enter para continuar...
+```
+
+#### Realizar Retiro
+
+```plaintext
+---Realizar Retiro---
+Ingresar DNI del Cliente: 76355221
+Tarjetas encontradas:
+1. Saldo de la tarjeta 4916-1566-2162-0361 de la cuenta 1740-948824 : 75000
+2. Saldo de la tarjeta 3424-0531-8096-1776 de la cuenta 3873-913863 : 13600
+Seleccione la tarjeta de la que desea realizar el retiro: 1
+
+Ingrese el monto a retirar: 500
+Se retiro correctamente S/500
+Presiona Enter para continuar...
+```
+
+### 3. Préstamos de Dinero
+
+#### Crear Préstamo
+
+```plaintext
+Ingrese DNI del cliente para gestionar préstamos: 76355221
+1. Crear nuevo préstamo
+2. Visualizar préstamos existentes
+3. Realizar pago de préstamo
+4. Visualizar cronograma de pagos
+5. Cancelar prestamo completo
+6. Regresar
+Seleccione una opción: 1
+Crear nuevo préstamo para el cliente con DNI: 76355221
+Introduce la fecha del préstamo (dd/mm/aaaa): 27/12/2024
+Introduce el monto del préstamo: 20000
+Introduce el plazo del préstamo (en meses): 2
+Introduce el interés del préstamo (porcentaje anual): 2
+Préstamo creado exitosamente para el cliente con DNI: 76355221
+```
+
+#### Visualizar Préstamos Existentes
+
+```plaintext
+Préstamos para el cliente con DNI: 76355221
+----------------------------------------
+Fecha del préstamo: 27/12/2024
+Monto del préstamo: 20000.00
+Plazo (meses): 2
+Interés (% anual): 2%
+Estado del préstamo: 
+Cuota mensual: 10200.00
+Deuda restante: 20400.00
+----------------------------------------
+```
+
+#### Realizar Pago de Préstamo
+
+```plaintext
+Préstamos del cliente con DNI: 76355221
+1. Monto: 20000.00, Plazo: 2 meses, Cuota: 10200.00, Deuda restante: 20400.00, Estado: 
+Seleccione el préstamo a pagar (1-2): 1
+Cuentas de ahorro del cliente con DNI: 76355221
+1. Número de cuenta: 1740-948824, Saldo disponible: 74500.00
+Seleccione la cuenta de ahorro para realizar el pago (1-2): 1
+Pago realizado exitosamente desde la cuenta de ahorro. Detalles actualizados del préstamo:
+Deuda restante: 10200.00, Estado: Activo
+```
+
+#### Visualizar Cronograma de Pagos
+
+```plaintext
+Cronograma de pagos para el cliente con DNI: 76355221
+----------------------------------------
+Fecha del préstamo: 27/12/2024
+Monto del préstamo: 12000.00
+Plazo (meses): 5
+Interés (% anual): 2%
+Estado del préstamo: 
+Cuota mensual: 2448.00
+Cronograma de pagos para el préstamo:
+Pago 1: 2448.00 (Estado: Pendiente)
+Pago 2: 2448.00 (Estado: Pendiente)
+Pago 3: 2448.00 (Estado: Pendiente)
+Pago 4: 2448.00 (Estado: Pendiente)
+Pago 5: 2448.00 (Estado: Pendiente)
+----------------------------------------
+```
+
+### 4. Salir
+
+```plaintext
+---Menu---
+1. Clientes
+2. Cuentas de ahorro
+3. Prestamos de dinero
+4. Salir
+Opcion: 4
+Saliendo del sistema...
 ```
 
 ## 🎓 Aprendizajes
