@@ -1,0 +1,3 @@
+C:/Users/PC Antonio/OneDrive/Documentos/SIMULADOR-BANCO-C++/cmake-build-debug/CMakeFiles/SIMULADOR_BANCO_C__.dir
+C:/Users/PC Antonio/OneDrive/Documentos/SIMULADOR-BANCO-C++/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/PC Antonio/OneDrive/Documentos/SIMULADOR-BANCO-C++/cmake-build-debug/CMakeFiles/rebuild_cache.dir

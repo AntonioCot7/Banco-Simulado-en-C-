@@ -1,0 +1,35 @@
+---CLIENTE (Antonio)---
+DNI: 829282
+Nombre: Antonio
+Fecha de Nacimiento: 2092284
+
+---CLIENTE (Jorge)---
+DNI: 9989022
+Nombre: Jorge
+Fecha de Nacimiento: 9289222
+
+---CLIENTE (Pepe)---
+DNI: 234543543
+Nombre: Pepe
+Fecha de Nacimiento: 2342322
+
+---CLIENTE (Lucas)---
+DNI: 1221123
+Nombre: Lucas
+Fecha de Nacimiento: 234232
+
+---CLIENTE (Pepito)---
+DNI: 2342342
+Nombre: Pepito
+Fecha de Nacimiento: 234232
+
+---CLIENTE (Sebas)---
+DNI: 324893248
+Nombre: Sebas
+Fecha de Nacimiento: 7785668
+
+---CLIENTE (Juancito)---
+DNI: 76355221
+Nombre: Juancito
+Fecha de Nacimiento: 23122004
+
